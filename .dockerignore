@@ -1,0 +1,4 @@
+node_modules
+src/main/UI/node_modules
+src/main/UI/dist
+target
