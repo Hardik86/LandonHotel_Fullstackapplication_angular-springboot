@@ -7,7 +7,7 @@ FROM maven:3.9.6-eclipse-temurin-17 AS build
 RUN apt-get update && apt-get install -y curl && \
     curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
     apt-get install -y nodejs && \
-    node -v && npm -v
+    node -v && npm -v \
     RUN npm install -g @angular/cli
 
 WORKDIR /app
